@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.shop.mapper.ManagerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.shop.model.Manager">
+        <id column="mg_id" property="mgId" />
+        <result column="mg_name" property="mgName" />
+        <result column="mg_pwd" property="mgPwd" />
+        <result column="mg_salt" property="mgSalt" />
+        <result column="mg_time" property="mgTime" />
+        <result column="role_id" property="roleId" />
+        <result column="mg_mobile" property="mgMobile" />
+        <result column="mg_email" property="mgEmail" />
+        <result column="mg_state" property="mgState" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        mg_id AS mgId, mg_name AS mgName, mg_pwd AS mgPwd, mg_salt AS mgSalt, mg_time AS mgTime, role_id AS roleId, mg_mobile AS mgMobile, mg_email AS mgEmail, mg_state AS mgState
+    </sql>
+
+</mapper>

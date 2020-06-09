@@ -28,8 +28,30 @@
         <dependency><!-- Mybatis-plus --> <!-- MP核心库 2.0.8版本以上,CRUD不支持二级缓存 -->
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
+            <version>2.2.0</version>
         </dependency>
+
+        <!---->
+        <!--<dependency>&lt;!&ndash; Mybatis-plus代码生成器 &ndash;&gt;-->
+        <!--<groupId>com.baomidou</groupId>-->
+        <!--<artifactId>mybatis-plus-generator</artifactId>-->
+        <!--<version>2.2.0</version>-->
+        <!--</dependency>-->
+
+        <!-- mybatis-plus 生成器需要依赖freemarker -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+        <!--devtools热部署-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+            <scope>true</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

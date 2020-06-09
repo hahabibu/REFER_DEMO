@@ -1,13 +1,20 @@
 package cn.shop.service;
 
-import cn.shop.model.po.Manager;
+import cn.shop.model.Manager;
+import com.baomidou.mybatisplus.service.IService;
 
-public interface ManagerService {
-	
-	/**
-	 * 根据名字找管理员
-	 * @param name
-	 * @return
-	 */
-	Manager findByName(String name) ;
+import java.util.List;
+
+/**
+ * <p>
+ * 管理员表 服务类
+ * </p>
+ *
+ * @author 
+ * @since 2020-06-10
+ */
+public interface ManagerService extends IService<Manager> {
+
+    public List<Manager> getManagerByPage();
+
 }
